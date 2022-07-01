@@ -1,3 +1,5 @@
+## POKP
+
 SELECT *
 	FROM PortfolioProject..CovidDeaths 
 	WHERE continent IS NOT NULL
@@ -6,25 +8,25 @@ SELECT *
 --ALTER TABLE PortfolioProject..CovidDeaths
 --ALTER COLUMN total_deaths float
 
-select location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
-from PortfolioProject..CovidDeaths
-WHERE location like '%argentina%'
-order by 1,2
+SELECT location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
+	FROM PortfolioProject..CovidDeaths
+	WHERE location LIKE '%argentina%'
+	ORDER BY 1,2
 
 --Looking at total cases vs total deaths
 -- Shows likelihood of dying if you contract covid in your country
 
-select location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
-from PortfolioProject..CovidDeaths
-WHERE location like '%states%'
-order by 1,2
+SELECT location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
+	FROM PortfolioProject..CovidDeaths
+	WHERE location LIKE '%states%'
+	ORDER BY 1,2
 
 -- Looing at total cases vs population
 -- show what percentage of population got covid
 SELECT location, date,  population, total_cases, (total_cases/population)*100 as InfectedPercentage
-FROM PortfolioProject..CovidDeaths
-WHERE location like '%states%'
-order by 1,2
+	FROM PortfolioProject..CovidDeaths
+	WHERE location LIKE '%states%'
+	ORDER BY 1,2
 
 -- Looing at total cases vs population
 -- show what percentage of population got covid
