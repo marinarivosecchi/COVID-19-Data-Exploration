@@ -3,6 +3,7 @@
 Covid 19 Data Exploration 
 Skills used: Joins, Windows Functions, Data type conversion, Aggregate Functions, Temp Tables, CTE's, Creating views
 
+Covid-19 Rates Dashboard: https://public.tableau.com/app/profile/marina.rivosecchi/viz/CovidDashboard_16551635708720/Dashboard1
 */
 
 --------------------------------------------------------------------------------------------------------------------------
@@ -199,3 +200,6 @@ SELECT dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinatio
 SELECT * FROM PercentPopulationVaccinated
 
 --------------------------------------------------------------------------------------------------------------------------
+
+
+-- Covid-19 Rates Dashboard: https://public.tableau.com/app/profile/marina.rivosecchi/viz/CovidDashboard_16551635708720/Dashboard1
